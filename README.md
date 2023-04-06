@@ -1,4 +1,3 @@
-# Python-Semestre-1
                        __
                      .'  '.
                  _.-'/  |  \
