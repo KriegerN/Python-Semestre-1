@@ -10,7 +10,8 @@ print('Mi edad es',edad)
 
 print('Hola soy '+nombre+' y tengo '+str(edad)+' años')
 
-#No se puede concadenar diferentes tipos de datos, por lo que se transforma el dato de edad a string.
+#No se puede concadenar diferentes tipos de datos con +, por lo que se transforma el dato de edad a string.
+#Es recomendable utilizar el signo + para unirlos, mejor que usar la coma según el profesor.
 
 nombre='Andrés'
 
