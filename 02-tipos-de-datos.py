@@ -49,5 +49,21 @@ print("Esta es una lista vacia",nueva_lista)
 # los corchetes [] se utilizan para crear una lista
 # que es una colección ordenada, los elementos de la lista están separados por comas
 
+#Como acceder a un elemento especifico en la lista?
+print(estudiantes[0])
+print(estudiantes[1])
+#Reasignar el valor de una posicion
+estudiantes[0] = "Gabriela"
+print(estudiantes[0])
 
+#Inicializando otra lista de datos mixtos
+data_asig = [10023, "Programación",1,True]
 
+#¿Qué hace este codigo?
+cod,ramo,semestre,estado= data_asig
+print(ramo)
+
+#¿Que hacen estas funciones?
+print(list("Python"))
+print(list(range(10)))
+print("\n")
