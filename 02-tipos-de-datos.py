@@ -36,7 +36,7 @@ num=[1,2,3,4,5,6]
 lenguaje = ["Python"]
 data= ["Osorno", {"UV": "nivel bajo", "Temp ºC": 15}, (-40.5725, -70.432)]
 print(data)
-print(len(data))
+print(len(data)) #Con len() podemos ver cuantos tipos de elementos, hay, deberian ser 3.
 print("lista de cadena de caracteres:",estudiantes)
 print("lista de números:",num)
 print("lista de elementos:",lenguaje)
