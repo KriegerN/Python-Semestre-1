@@ -26,10 +26,10 @@ ampolleta=False
 interruptor=True
 
 # Con type sabemos el tipo de datos que estamos tratando
-print(type(ampolleta))
+print(type(ampolleta),"\n")
 
 ampolleta='soy una ampolleta'
-print(type(ampolleta))
+print(type(ampolleta),"\n")
 
 estudiantes = ['Matias', 'Marco', 'Cristobal', 'Sebastián']
 num=[1,2,3,4,5,6]
@@ -45,25 +45,57 @@ print(estudiantes.count("Matias"))
 #Datos tipo array (objetos de tipo colección) o arreglos. Con array se gasta menos memoria que con list() pero list() es mas dinamico
 #y array es mas limitado a un tipo de dato.
 nueva_lista = list()
-print("Esta es una lista vacia",nueva_lista)
+print("Esta es una lista vacia",nueva_lista,"\n")
 # los corchetes [] se utilizan para crear una lista
 # que es una colección ordenada, los elementos de la lista están separados por comas
 
-#Como acceder a un elemento especifico en la lista?
+#Como acceder a un elemento especifico en la lista? si pones -1 va del ultimo al primero, muy util para recorrer listas
 print(estudiantes[0])
-print(estudiantes[1])
+print(estudiantes[-1])
 #Reasignar el valor de una posicion
 estudiantes[0] = "Gabriela"
-print(estudiantes[0])
+print(estudiantes[0],"\n")
 
+#Se pueden sumar listas?
+listas=estudiantes+num
+print(listas,"\n")
 #Inicializando otra lista de datos mixtos
 data_asig = [10023, "Programación",1,True]
 
-#¿Qué hace este codigo?
+#¿Qué hace este codigo? le da nombres a los datos de la lista
 cod,ramo,semestre,estado= data_asig
-print(ramo)
+print(ramo,"\n")
 
 #¿Que hacen estas funciones?
 print(list("Python"))
 print(list(range(10)))
+print("\n")
+
+# TUPLAS, las tuplas se hacen con parentesis y no son mutables
+grupo1 = ("Daniel","Cristian","Felipe",200,100,"Daniel")
+print("###### TUPLAS ######")
+print(type(grupo1),"\n")
+
+#Accediendo al primer elemento de la tupla
+print(grupo1[0])
+
+#Consultando el elemento "Daniel" cuantas veces se encuentra en la tupla
+print("El elemento se repite:",grupo1.count("Daniel"),"veces","\n")
+
+#Muestra el indice del primer elemento buscado
+print("El indice del elemento es:",grupo1.index("Daniel"),"\n")
+
+#Reasignar el primer elemento de la tupla
+#grupo1[0]="Constanza"
+#print(grupo1[0])
+#NO ES MUTABLE
+
+#Se pueden sumar las tuplas?
+grupo2=("Constanza","Cristobal",150,250)
+grupos=grupo1+grupo2
+print(grupos,"\n")
+
+#Entonces como no puedo modificar una tupla, ¿Que puedo hacer?
+grupo1=list(grupo1)
+print("La tupla ahora es de tipo:",type(grupo1),"\n")
 print("\n")
