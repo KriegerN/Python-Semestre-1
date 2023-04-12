@@ -159,4 +159,4 @@ conjunto_animales.add("Cocodrilo")
 print(f"El set de animales lo conforman: {conjunto_animales}")
 print("\n")
 
-# --Diccionarios--
+# --Diccionarios-- proxima clase
