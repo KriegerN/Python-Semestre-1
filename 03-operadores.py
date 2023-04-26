@@ -33,8 +33,9 @@ gravedad=9.81 #la aceleracion de gravedad (METRO POR SEGUNDOS CUADRADO)
 #Operaciones aritmeticas con flotantes
 velocidad=gravedad*tiempo
 print(f"La velocidad del objeto en caida libre es de: {velocidad} m/s")
-print("La velocidad del objeto en caida libre es de: {:.2f}".format(velocidad))
-print(f"La velocidad del objeto en caida libre es de : {velocidad:.2f}")
+print("La velocidad del objeto en caida libre es de: {:.2f}".format(velocidad),"m/s")
+print(f"La velocidad del objeto en caida libre es de: {velocidad:.2f} m/s")
+print("La velocidad del objeto en caida libre es de:","%.2f" % velocidad,"m/s")
 
 #Declarando variables de tipo compleja
 c1= 4 + 3j
