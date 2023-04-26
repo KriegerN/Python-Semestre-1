@@ -8,7 +8,7 @@ peso = 70.5 #Real
 
 complejo = 1 + 4j #Complejo, se pone j para los complejos
 
-print("Impresión del número complejo",complejo)
+print("Impresión del número complejo",complejo,"\n")
 
 print(f"Mi estatura es de {estatura}")
 
@@ -16,6 +16,12 @@ print(f"Mi estatura es de {estatura}")
 
 imc = peso/estatura**2
 
+# Transformando Real a Entero
+print(peso)
+print("Transformando un valor real a entero:",int(peso))
+
+print(edad)
+print("Transformando Entero a Real:",float(edad))
 print("Mi IMC es de:",imc)
 
 #El codigo {:.2f} es para aproximar y va entre comillas y .format es para 
@@ -47,8 +53,15 @@ ampolleta='soy una ampolleta'
 
 print(type(ampolleta),"\n")
 
+#Podemos transformar cualquier valor a un Booleano (al igual que un string)
+print(bool(0)) #0 Significa apagado por lo que es False.
+print(bool("")) #Vacio por lo que dará False.
+print(bool(None)) #Ninguno por lo que dará False.
+print(bool("False")) #Es una cadena de texto por lo que es True.
+print(bool(1)) #1 es encendido por lo que siempre va a dar True.
+print("\n")
 
-estudiantes = ['Matias', 'Marco', 'Cristobal', 'Sebastián']
+estudiantes = ['Matias', 'Marco', 'Cristobal', 'Sebastián', "Marco"]
 
 num=[1,2,3,4,5,6]
 
@@ -65,6 +78,8 @@ print("lista de cadena de caracteres:",estudiantes)
 print("lista de números:",num)
 
 print("lista de elementos:",lenguaje)
+listamixta=[100,"Felipe",False]
+print(len(listamixta)) #Para ver cuantos elementos hay en una lista
 
 #Con .count() podemos buscar un elemento dentro de una lista y nos muestra donde está.
 
@@ -72,13 +87,12 @@ print(estudiantes.count("Matias"))
 
 #Datos tipo array (objetos de tipo colección) o arreglos. Con array se gasta menos memoria que con list() pero list() es mas dinamico
 #y array es mas limitado a un tipo de dato.
-nueva_lista = list()
-
+nueva_lista = list([11,13,14,12])
+nueva_listita= [10,11,12] #Es más fácil de esta manera, y hace lo mismo que arriba. 
 print("Esta es una lista vacia",nueva_lista,"\n")
 
 # los corchetes [] se utilizan para crear una lista
 # que es una colección ordenada, los elementos de la lista están separados por comas
-
 #Como acceder a un elemento especifico en la lista? si pones -1 va del ultimo al primero, muy util para recorrer listas
 
 print(estudiantes[0])
@@ -104,6 +118,7 @@ data_asig = [10023, "Programación",1,True]
 cod,ramo,semestre,estado= data_asig
 print(ramo,"\n")
 
+print("Se pueden sumar las listas?",estudiantes+num) #Si, si se pueden sumar
 #¿Que hacen estas funciones?
 print(list("Python"))
 
@@ -139,7 +154,7 @@ print(grupos,"\n")
 grupo1=list(grupo1)
 print("La tupla ahora es de tipo:",type(grupo1),"\n")
 print("\n")
-
+print(grupo1[1:4])
 # SETS o Conjuntos
 #Formas de inicializar un Set
 conjunto_vacio = set()
@@ -159,4 +174,31 @@ conjunto_animales.add("Cocodrilo")
 print(f"El set de animales lo conforman: {conjunto_animales}")
 print("\n")
 
-# --Diccionarios-- proxima clase
+""" -------Diccionarios------ """
+diccionari1=dict()
+diccionario2={}
+datos_personales={
+    "Nombre":"Nicolás",
+    "Institución":"Ulagos",
+    "Edad":29,
+    "Asignaturas": {"Estructura de Datos", "Programación"}
+    }
+print("Diccionario inicial:",datos_personales)
+
+#Clave es lo mismo que un campo
+#Consulta la cantidad de elementos del Diccionario
+print(len(datos_personales))
+
+#Como acceder a un elemento especifico de una lista?
+print(datos_personales["Institución"])
+
+#Como actualizamos el valor de una clave dentro de un diccionario?
+datos_personales["Institución"] = "USS"
+
+#Agregando un nuevo campo al diccionario
+datos_personales["Ciudad"] = "Osorno"
+print(datos_personales)
+
+#Eliminando un campo del diccionario
+del datos_personales["Ciudad"]
+print("Diccionario con el campo eliminado:",datos_personales)
