@@ -81,10 +81,12 @@ print(animal_domestico > animal_salvaje) # Mayor a
 print(animal_domestico < animal_salvaje) # Menor a
 print(animal_salvaje >= animal_domestico) # Mayor o igual a
 print(animal_salvaje <= animal_domestico) # Menor o igual a
-'''
+
 bencina = True
 encendido = True
-edad = 19
+edad= 19
+print(bool(bencina))
+print(bool(not bencina)) #Se transforma en False, y si fuera False se transformaria en True
 
 #Utilizando el operador AND
 if bencina and encendido:
@@ -93,13 +95,14 @@ else:
     print("El vehiculo no puede arrancar")
 
 #Utilizando el operador OR 
-if bencina or encendido:
+if bencina or (encendido or edad>=18):
     print("El vehiculo puede avanzar")
 else:
     print("El vehiculo no puede arrancar")
 
 #Utilizando el operador NOT junto al AND
-if not bencina and encendido:
+if not bencina and encendido: 
     print("El vehiculo puede avanzar")
 else:
     print("El vehiculo no puede arrancar")
+'''

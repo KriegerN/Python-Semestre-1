@@ -1,3 +1,4 @@
+'''
 #Declarando variables de tipo texto
 name='Nico'
 
@@ -35,3 +36,4 @@ print('Su nombre es:',nombre1)
 ciudad, region, pais, year = "Puerto Montt", "Los Lagos", "Chile", 2023
 #Se puede asignar varias variables a la vez, separandolas por comas.
 print(f"Hola vivo en {ciudad}, en la región de {region}, en el país de {pais}, y es el año {year}")
+'''

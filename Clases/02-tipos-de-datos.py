@@ -1,3 +1,4 @@
+'''
 # Datos de un tipo numerico
 
 estatura = 1.71 #Real
@@ -202,3 +203,4 @@ print(datos_personales)
 #Eliminando un campo del diccionario
 del datos_personales["Ciudad"]
 print("Diccionario con el campo eliminado:",datos_personales)
+'''
