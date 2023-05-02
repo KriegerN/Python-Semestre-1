@@ -5,5 +5,6 @@ datos_estudiante={
     "Nota Laboratorio 2":float(input("Ingrese su nota del laboratorio 2: "))
     }
 promedionota=datos_estudiante["Nota Laboratorio 1"]*0.3+datos_estudiante["Nota Laboratorio 2"]*0.7
+datos_estudiante["Promedio"] = round(promedionota,1)
 print("Información del estudiante: ",datos_estudiante)
 print("Su nota es:",round(promedionota,1))
