@@ -1,4 +1,4 @@
-'''
+
 """  01----------OPERADORES ARITMETICOS------------  """
 #Declarando variables de tipo entero
 a=20
@@ -105,4 +105,3 @@ if not bencina and encendido:
     print("El vehiculo puede avanzar")
 else:
     print("El vehiculo no puede arrancar")
-'''
