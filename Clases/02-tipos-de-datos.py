@@ -19,7 +19,7 @@ imc = peso/estatura**2
 # Transformando Real a Entero
 print(peso)
 print("Transformando un valor real a entero:",int(peso))
-
+ 
 print(edad)
 print("Transformando Entero a Real:",float(edad))
 print("Mi IMC es de:",imc)
