@@ -1,11 +1,6 @@
-#Se pueden sumar las tuplas?
-grupo1 = ("Daniel","Cristian","Felipe",200,100,"Daniel")
-grupo2=("Constanza","Cristobal",150,250)
-grupos=grupo1+grupo2
-print(grupos,"\n")
-
-#Entonces como no puedo modificar una tupla, ¿Que puedo hacer?
-grupo1=list(grupo1)
-print("La tupla ahora es de tipo:",type(grupo1),"\n")
-grupo1=tuple(grupo1)
-print("La tupla ahora es de tipo:",type(grupo1),"\n")
+n1=int(input("Ingrese el primer numero: "))
+n2=int(input("Ingrese el segundo numero: "))
+n3=int(input("Ingrese el tercer numero: "))
+lista=n1,n2,n3
+print(f"El numero mas grande es {max(lista)}")
+print(f"El numero mas pequeño es {min(lista)}")
