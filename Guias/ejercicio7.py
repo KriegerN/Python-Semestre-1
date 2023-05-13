@@ -4,5 +4,4 @@ diccionario={
     'Nombre':lista1,
     'Edad':lista2
     }
-print(diccionario['Nombre'])
-print(diccionario['Edad'])
+print(diccionario['Nombre'],"\n",diccionario['Edad'])
