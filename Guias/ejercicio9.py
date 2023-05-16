@@ -10,9 +10,7 @@ numeros.insert(0,2)
 print(f'Añadiendo el 2 en la primera posición de la lista: {numeros} \n')
 
 numeros=[4,3,8,12,6,10,14,3,6]
-for i in numeros:
-    if numeros.count(i) > 1:
-        numeros.remove(i)
+numeros=list(set(numeros))
 print(f'Eliminando los duplicados {numeros} \n')
 
 numeros=[4,3,8,12,6,10,14,3,6]

@@ -13,4 +13,4 @@ while True:
         print('La estación correspondiente al mes', mes, 'es primavera')
         break
     else:
-        print('Ingrese un mes válido')
+        print('---Mes inválido---')
