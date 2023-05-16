@@ -11,12 +11,3 @@ agenda['Redes sociales']={
     }
 print(f'El facebook del contacto es {agenda["Redes sociales"]["Facebook"]}')
 print(f'La agenda completa actualizada es: {agenda} \n')
-
-print('Cambiando la forma en que se muestra la agenda en un formato más entendible \n')
-for clave, valor in agenda.items():
-    if isinstance(valor, dict):
-        print(f'{clave}:')
-        for subclave, subvalor in valor.items():
-            print(f'    {subclave}: {subvalor}')
-    else:
-        print(f'{clave}: {valor}')
