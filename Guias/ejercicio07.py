@@ -5,3 +5,4 @@ diccionario={
     'Edad':lista2
     }
 print(diccionario['Nombre'],"\n",diccionario['Edad'])
+diccionario1=dict(zip(lista1,lista2))
