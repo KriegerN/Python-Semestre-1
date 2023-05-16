@@ -5,7 +5,7 @@ c=float(input('Ingrese el tercer lado: '))
 p=(a+b+c)/2
 area=round(sqrt(p*(p-a)*(p-b)*(p-c)),2)
 if a==b and b==c:
-    triangulo='triangulo equilatero'
+    triangulo='triangulo equilátero'
     print(f'Es un {triangulo}')
     print(f'Su área es de {area} cm^2')
 elif a==b or b==c or a==c:
