@@ -9,19 +9,19 @@ print(f'Añadiendo el 2 en la primera posición de la lista: {numeros} \n')
 
 numeros=list(set(numeros))
 print(f'Eliminando los duplicados {numeros} \n')
-
-numeros=[4,3,8,12,6,10,14,3,6]
+numeros=[3.5,6.5,5.2]
+numeros=[4,3,8,12,5,10,14,3,6]
 # ----  Media  ----
 cantidad=len(numeros)
 suma=sum(numeros)
 media=round((suma/cantidad),1)
 # ---- Mediana ----
 numeros.sort()
-mediana_index=(cantidad/2)-1
-if (mediana_index)%1==0.5:
-    mediana=numeros[round(mediana_index)]
+mediana_index=(cantidad//2)
+if (cantidad/2)%1==0.5:
+    mediana=numeros[mediana_index]
 else:
-    mediana1=numeros[round(mediana_index)]
-    mediana2=numeros[round(mediana_index)+1]
+    mediana1=numeros[mediana_index-1]
+    mediana2=numeros[mediana_index]
     mediana=(mediana1+mediana2)/2
 print(f'La lista ordenada es {numeros} y su media es de {media} y su mediana es {mediana}')
