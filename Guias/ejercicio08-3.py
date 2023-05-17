@@ -4,9 +4,9 @@ otonio='marzo','abril','mayo'
 invierno='junio','julio','agosto'
 primavera='septiembre','octubre','noviembre'
 meses=verano+invierno+primavera+otonio
-mes=str(input('Ingrese el mes: ')).lower()
+mes=str(input('Ingrese el mes: ')).lower() .strip()
 while mes not in meses:
-    mes=str(input('Ingrese el mes nuevamente: ')).lower()
+    mes=str(input('Ingrese el mes nuevamente: ')).lower() .strip()
 if mes in verano:
     print('Es verano')
 elif mes in otonio:

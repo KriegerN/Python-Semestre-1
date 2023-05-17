@@ -1,5 +1,5 @@
 while True:
-    mes = str(input('Ingrese un mes: ')).lower()
+    mes = str(input('Ingrese un mes: ')).lower() .split()
     if mes == 'enero' or mes == 'febrero' or mes == 'diciembre':
         print('La estación correspondiente al mes', mes, 'es verano')
         break

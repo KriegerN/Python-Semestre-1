@@ -1,5 +1,5 @@
-palabra1=str(input('Ingrese la primera palabra: '))
-palabra2=str(input('Ingrese la segunda palabra: '))
+palabra1=str(input('Ingrese la primera palabra: ')).strip()
+palabra2=str(input('Ingrese la segunda palabra: ')).strip()
 if len(palabra1)>len(palabra2):
     print(f'''La palabra 1: "{palabra1}" tiene más caracteres ({len(palabra1)})'
 La palabra 2: "{palabra2}" tiene menos caracteres ({len(palabra2)})''')
