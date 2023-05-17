@@ -19,9 +19,9 @@ media=round((suma/cantidad),1)
 numeros.sort()
 mediana_index=(cantidad/2)-1
 if (mediana_index)%1==0.5:
+    mediana=numeros[round(mediana_index)]
+else:
     mediana1=numeros[round(mediana_index)]
     mediana2=numeros[round(mediana_index)+1]
     mediana=(mediana1+mediana2)/2
-else:
-    mediana=numeros[mediana_index]
 print(f'La lista ordenada es {numeros} y su media es de {media} y su mediana es {mediana}')

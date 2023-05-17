@@ -2,11 +2,10 @@
 verano='enero','febrero','diciembre'
 otonio='marzo','abril','mayo'
 invierno='junio','julio','agosto'
-primavera="septiembre",'octubre','noviembre'
-
+primavera='septiembre','octubre','noviembre'
+meses=verano+invierno+primavera+otonio
 mes=str(input('Ingrese el mes: ')).lower()
-while mes not in verano and mes not in otonio and mes not in invierno and mes not in primavera:
-    print('Mes inválido')
+while mes not in meses:
     mes=str(input('Ingrese el mes nuevamente: ')).lower()
 if mes in verano:
     print('Es verano')
