@@ -1,8 +1,17 @@
 a=float(input('Ingrese el primer lado: '))
+while a<0:
+    print('Valor inválido')
+    a=float(input('Ingrese el primer lado: '))
 b=float(input('Ingrese el segundo lado: '))
+while b<0:
+    print('Valor inválido')
+    b=float(input('Ingrese el primer lado: '))
 c=float(input('Ingrese el tercer lado: '))
-p=(a+b+c)/2
-area=round(((p*(p-a)*(p-b)*(p-c))**0.5),2)
+while c<0:
+    print('Valor inválido')
+    c=float(input('Ingrese el primer lado: '))
+s=(a+b+c)/2
+area=round(((s*(s-a)*(s-b)*(s-c))**0.5),2)
 if a==b and b==c:
     triangulo='triangulo equilátero'
     print(f'Es un {triangulo}')
