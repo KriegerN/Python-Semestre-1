@@ -1,8 +1,9 @@
-lista1=['Juan','Jose','Nico','Martin','Daniel']
-lista2=[21,24,19,18,17]
-# diccionario={
-#     'Nombre':lista1,
-#     'Edad':lista2
-#}
-# print(diccionario['Nombre'],"\n",diccionario['Edad'])
-diccionario1=dict(zip(lista1,lista2))
+nombres=['Juan','Jose','Nico','Martin','Daniel']
+edades=[21,24,19,18,17]
+# trabajadores={
+#     'Nombre':nombres,
+#     'Edad':edades
+#   }
+# print(trabajadores['Nombre'],"\n",trabajadores['Edad'])
+trabajadores=dict(zip(nombres,edades))
+print(trabajadores)
