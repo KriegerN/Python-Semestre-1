@@ -177,6 +177,7 @@ print("\n")
 """ -------Diccionarios------ """
 diccionari1=dict()
 diccionario2={}
+print(type(diccionario2))
 datos_personales={
     "Nombre":"Nicolás",
     "Institución":"Ulagos",
