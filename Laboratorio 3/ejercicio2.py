@@ -8,8 +8,7 @@ print(f'La lista es: {listas_concatenadas} \n')
 listas_concatenadas.insert(-1,20)
 print(f'La lista es: {listas_concatenadas} \n')
 #c)Ordenar la lista de forma descendente.
-listas_concatenadas.sort()
-listas_concatenadas.reverse()
+listas_concatenadas.sort(reverse=True)
 print(f'La lista es: {listas_concatenadas} \n')
 #d)Insertar la lista [4,5,6] en la última posición de la lista ordenada.
 nuevalista=[4,5,6]
