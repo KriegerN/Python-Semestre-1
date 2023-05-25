@@ -35,8 +35,8 @@ for i,dias in trabajadores.items():
     trabajadores[i]['Pago diario'] = round(totalsemana/diastrabajados)
     trabajadores[i]['Total semanal'] = totalsemana
     
-print(f"\nNicolas: {trabajadores['Nicolas']}\n")
+print(f"\nTrabajador 1: {trabajadores['Trabajador 1']}\n")
 
-print(f"\nAlier: {trabajadores['Alier']}\n")
+print(f"\nTrabajador 2: {trabajadores['Trabajador 2']}\n")
 
-print(f"\nDaniel: {trabajadores['Daniel']}\n")
+print(f"\nTrabajador 3: {trabajadores['Trabajador 3']}\n")
