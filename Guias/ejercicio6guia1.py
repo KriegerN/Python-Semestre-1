@@ -25,3 +25,4 @@ while hour!=23 or min!=59 or seg!=59:
         print(f'La hora es: {hour}:{min}:0{seg}')
     else: 
         print(f'La hora es: {hour}:{min}:{seg}')
+        

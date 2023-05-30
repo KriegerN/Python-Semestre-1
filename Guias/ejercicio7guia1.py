@@ -10,3 +10,4 @@ while n!=0:
         suma*=a
         i+=1
     print(f'El factorial de {n}! es {suma}')
+    
