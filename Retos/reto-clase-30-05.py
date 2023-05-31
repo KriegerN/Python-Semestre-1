@@ -1,6 +1,7 @@
 def frase(a):
     lista=a.split()
-    longitud=len(a)
+    quitarespacios=''.join(lista)
+    longitud=len(quitarespacios)
     diccionario={
         'Palabras':lista,
         'Longitud':longitud
