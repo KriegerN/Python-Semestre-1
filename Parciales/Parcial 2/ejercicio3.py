@@ -12,6 +12,9 @@ else:
 # b)Comprobar si al menos la temperatura 6°C y 17°C está en alguno de los sets
 if  6 or 17 in mintemp.union(maxtemp):
     print('La temp 6°C o 17°C se encuentra dentro de alguno de los sets.')
+else:
+    print('No se encuentra la temp 6°C o 17°C dentro de ninguno de los sets.')
+    
 # c)Elevar a 4 todas las temperaturas dentro de los sets
 mintemp_actualizada=set()
 maxtemp_actualizada=set()
