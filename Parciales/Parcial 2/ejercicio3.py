@@ -13,8 +13,6 @@ else:
 for i in mintemp.union(maxtemp):
     if i == 6 or i == 17:
         print('La temp 6°C o 17°C se encuentra dentro de alguno de los sets.')
-    else:
-        print('La temp 6°C o 17°C no se encuentra dentro de alguno de los sets.')
 # c)Elevar a 4 todas las temperaturas dentro de los sets
 mintemp_actualizada=set()
 maxtemp_actualizada=set()
