@@ -10,16 +10,15 @@ if 9 in mintemp.intersection(maxtemp):
 else: 
     print('9°C No está en ninguno de los 2 sets')
 # b)Comprobar si al menos la temperatura 6°C y 17°C está en alguno de los sets
-for i in mintemp.union(maxtemp):
-    if i == 6 or i == 17:
-        print('La temp 6°C o 17°C se encuentra dentro de alguno de los sets.')
+if  6 or 17 in mintemp.union(maxtemp):
+    print('La temp 6°C o 17°C se encuentra dentro de alguno de los sets.')
 # c)Elevar a 4 todas las temperaturas dentro de los sets
 mintemp_actualizada=set()
 maxtemp_actualizada=set()
 for i in mintemp:
     mintemp_actualizada.add(i+4)
-    for j in maxtemp:
-        maxtemp_actualizada.add(j+4)
+for j in maxtemp:
+    maxtemp_actualizada.add(j+4)
 print(f'Las temperaturas minimas actualizadas aumentando en 4 cada temperatura es: {mintemp_actualizada}')
 print(f'Las temperaturas maximo actualizadas aumentando en 4 cada temperatura es: {maxtemp_actualizada}')
 # d)Unir ambos sets en uno solo
