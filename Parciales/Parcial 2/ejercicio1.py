@@ -5,8 +5,9 @@ def palindromo():
     for i in palabra:
         lista.insert(0,i)
     palabraalreves=''.join(lista)
+    print(palabraalreves)
     if palabra==palabraalreves:
         print(f'La palabra {palabra} es un palíndromo')
     else:
-        print(f'La palabra {palabra} es no un palíndromo')
+        print(f'La palabra {palabra} no es un palíndromo')
 palindromo()
