@@ -25,9 +25,8 @@
 #         print(f'La hora es: {hour}:{min}:0{seg}')
 #     else: 
 #         print(f'La hora es: {hour}:{min}:{seg}')
-import time
-for hora in range(1,24):
-    for minuto in range(52,60):
-        for segundo in range(60):
-            print(f'{hora:02}:{minuto:02}:{segundo:02}')
-            time.sleep(1)
+def reloj():
+    for hora in range(1,24):
+        for minuto in range(52,60):
+            for segundo in range(60):
+                print(f'{hora:02}:{minuto:02}:{segundo:02}')

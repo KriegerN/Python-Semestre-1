@@ -46,15 +46,15 @@ while True:
             sumimpar+=identificacionimpar(n)
 mayor=num_mayor(listanum)
 suma=total(listanum)
-promedio=prom(listanum)
+promedio=round(prom(listanum))
 print(f'La suma de pares es: {sumpar}')
 print(f'La suma de impares es: {sumimpar}')
 print(f'La suma total es: {suma}')
-print(f'El promedio es: {promedio:0.1f}')
+print(f'El promedio es: {promedio}')
 print(f'El numero mayor ingresado fue: {mayor}')
 if mayor>promedio:
     print(f'El número es mayor que el promedio y este es {mayor}')
 elif mayor == promedio:
-    print(f'El promedio es igual al mayor y al menor y es {promedio}')
+    print(f'El promedio es igual al mayor y es {promedio}')
 else:
     print(f'El número es menor que el promedio y este es {mayor}')
