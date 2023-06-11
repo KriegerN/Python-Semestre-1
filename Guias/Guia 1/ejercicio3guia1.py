@@ -40,3 +40,4 @@ print(f"\nTrabajador 1: {trabajadores['Trabajador 1']}\n")
 print(f"\nTrabajador 2: {trabajadores['Trabajador 2']}\n")
 
 print(f"\nTrabajador 3: {trabajadores['Trabajador 3']}\n")
+
