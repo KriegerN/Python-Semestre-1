@@ -1,3 +1,5 @@
+"---- TIPO DE DATOS ----"
+
 # Datos de un tipo numerico
 
 estatura = 1.71 #Real
@@ -19,13 +21,13 @@ imc = peso/estatura**2
 # Transformando Real a Entero
 print(peso)
 print("Transformando un valor real a entero:",int(peso))
- 
+
+# Transformando un Entero a Real
 print(edad)
 print("Transformando Entero a Real:",float(edad))
 print("Mi IMC es de:",imc)
 
-#El codigo {:.2f} es para aproximar y va entre comillas y .format es para 
-
+#formateando la salida a dos decimales
 print("Mi IMC es de: {:.2f}" .format(imc), "\n")
 
 # Datos de tipo cadena de caracteres
@@ -38,6 +40,7 @@ print('La asignatura de',asignatura,'corresponde a la carrera de',carrera)
 print('La asignatura de',len(asignatura),'corresponde a la carrera de',len(carrera))
 
 #Funciones propias de python 
+
 #str() , int() , float() len() , type()= String es para texto, Int para enteros, float para reales, 
 #y len cuenta los caracteres, por ej: "Hola"= 4
 
@@ -119,15 +122,18 @@ cod,ramo,semestre,estado= data_asig
 print(ramo,"\n")
 
 print("Se pueden sumar las listas?",estudiantes+num) #Si, si se pueden sumar
+
 #¿Que hacen estas funciones?
 print(list("Python"))
-
+# genera una lista de 10 elementos
 print(list(range(10)))
 
 print("\n")
 
+
 # TUPLAS, las tuplas se hacen con parentesis y no son mutables
 grupo1 = ("Daniel","Cristian","Felipe",200,100,"Daniel")
+
 print("###### TUPLAS ######")
 print(type(grupo1),"\n")
 
@@ -155,6 +161,7 @@ grupo1=list(grupo1)
 print("La tupla ahora es de tipo:",type(grupo1),"\n")
 print("\n")
 print(grupo1[1:4])
+
 # SETS o Conjuntos
 #Formas de inicializar un Set
 conjunto_vacio = set()
@@ -177,13 +184,16 @@ print("\n")
 """ -------Diccionarios------ """
 diccionari1=dict()
 diccionario2={}
+
 print(type(diccionario2))
+
 datos_personales={
     "Nombre":"Nicolás",
     "Institución":"Ulagos",
     "Edad":29,
     "Asignaturas": {"Estructura de Datos", "Programación"}
     }
+
 print("Diccionario inicial:",datos_personales)
 
 #Clave es lo mismo que un campo
@@ -203,3 +213,9 @@ print(datos_personales)
 #Eliminando un campo del diccionario
 del datos_personales["Ciudad"]
 print("Diccionario con el campo eliminado:",datos_personales)
+
+hospital = dict(
+    nombre = "Hospital San Nico",
+    direccion = "Dr. Guillermo Buhler 1765",
+    ciudad = "Osorno"
+)
