@@ -22,5 +22,6 @@ print(suma(2,4))
 def resta(a,b):
     return a-b
 
+
 a=int(input('Ingrese a: '))
 a=int(input('Ingrese b: '))
