@@ -4,4 +4,5 @@ for i in range(500,801,10):
     if i<800: 
         suma+=j
         j-=2
+
 print(f'La sumatoria es de {suma}')
