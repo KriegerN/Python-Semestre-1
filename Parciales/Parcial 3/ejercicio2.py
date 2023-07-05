@@ -71,4 +71,5 @@ print(f'El promedio de las listas combinadas es: {promedio_listas}')
 # OBTENER LA MEDIANA DE AMBAS LISTAS COMBINADAS 
 
 mediana_listas = mediana(listas_combinadas)
+mediana_listas2 = mediana2(listas_combinadas)
 print(f'La mediana de ambas listas combinadas es: {mediana_listas}')
