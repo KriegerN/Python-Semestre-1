@@ -3,8 +3,7 @@
 <head>
   <title>Laboratorio 5 - Tema 2</title> <!-- Titulo de la pestaña-->
 </head>
-<body>
-  
+<body background="https://www.24horas.cl/24horas/site/artic/20230328/imag/foto_0000000320230328102853/A_UNO_1448443.jpg">
   <h1>Calculadora de IMC</h1>
   <form id="lab5">
     <!-- Nombre de la persona-->
@@ -45,7 +44,15 @@
 
     <br>
     <!-- Botón para subir los datos -->
-    <button type='submit'>Calcular</button>
+    <button 
+    style="
+    color: black;
+    background-color: whitesmoke;
+    padding-inline: 2%;
+    padding-block: 1%;
+    " 
+    type='submit'>Calcular
+    </button>
   </form>
   <!-- Resultados (Ocultos hasta calcular todos los datos de la persona) -->
   <div id='resultado' style='display: none;'>
@@ -56,5 +63,6 @@
     <p id='estado'></p> <!-- Muestra el estado nutricional -->
   </div>
   <script src='laboratorio5.js'></script> <!-- Se lee el codigo js, tiene que estar abajo del todo o sino intenta leer el 'lab5' antes de siquiera cargarlo -->
+  
 </body>
 </html>
