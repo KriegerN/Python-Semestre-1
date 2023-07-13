@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Laboratorio 5 - Tema 2</title> <!-- Titulo de la pestaña-->
+</head>
+<body>
+  
+  <h1>Calculadora de IMC</h1>
+  <form id="lab5">
+    <!-- Nombre de la persona-->
+    <label >Nombre: </label>
+    <input type='text' id='nombre' required><br>
+
+    <br>
+    <!-- Peso de la persona en kg -->
+    <label >Peso (kg): </label>
+    <input type='number' id='peso' required><br>
+
+    <br>
+    <!-- Altura de la persona -->
+    <label >Altura (metros): </label>
+    <input type='number' step='0.01' id='altura' required><br>
+
+    <br>
+    <!-- Edad de la persona -->
+    <label >Edad: </label>
+    <input type='number' id='edad' required><br>
+
+    <br>
+    <!-- Género de la persona -->
+    <label >Género: </label>
+    <select id='genero'>
+      <option value='masculino'>Masculino</option>
+      <option value='femenino'>Femenino</option>
+    </select><br>
+
+    <br>
+    <!-- Actividad física de la persona -->
+    <label >Actividad física: </label>
+    <select id='actividad'>
+      <option value='sedentario'>Sedentario</option>
+      <option value='moderado'>Moderado</option>
+      <option value='activo'>Activo</option>
+    </select><br>
+
+    <br>
+    <!-- Botón para subir los datos -->
+    <button type='submit'>Calcular</button>
+  </form>
+  <!-- Resultados (Ocultos hasta calcular todos los datos de la persona) -->
+  <div id='resultado' style='display: none;'>
+    <h1 id='nombreResultado'></h1> <!-- Muestra el resultado para (nombre) -->
+    <p id='imc'></p> <!-- Muestra el IMC -->
+    <p id='clasificacion'></p> <!-- Muestra la clasificación -->
+    <p id='ged'></p> <!-- Muestra el gasto energetico diario -->
+    <p id='estado'></p> <!-- Muestra el estado nutricional -->
+  </div>
+  <script src='laboratorio5.js'></script> <!-- Se lee el codigo js, tiene que estar abajo del todo o sino intenta leer el 'lab5' antes de siquiera cargarlo -->
+</body>
+</html>
