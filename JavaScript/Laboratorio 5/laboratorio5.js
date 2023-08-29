@@ -8,7 +8,7 @@ document.getElementById('lab5').addEventListener('submit', function(event) {
     let edad = parseInt(document.getElementById('edad').value); // No se usan estos datos pero se obtienen correctamente
     let genero = document.getElementById('genero').value; // Lo mismo de arriba
     let actividad = document.getElementById('actividad').value;
-    console.log(nombre,peso,altura,edad,genero,actividad) // Revisar si se obtienen correctamente
+    console.log(nombre,peso,altura,edad,genero,actividad); // Revisar si se obtienen correctamente
     
     // Calculo del IMC, (altura por altura es igual a altura al cuadrado)
     let imc = peso / (altura * altura);
@@ -26,7 +26,7 @@ document.getElementById('lab5').addEventListener('submit', function(event) {
     }
     
     // Clasificación sde la actividad física
-    let actividadFisica; 
+    let actividadFisica;  
     if (actividad === 'sedentario') {
         actividadFisica = 1.2;
       } else if (actividad === 'moderado') {
